@@ -274,38 +274,60 @@ $(document).ready(function () {
       {
         id: "event1", // Event's ID (required)
         name: "New Year", // Event name (required)
-        date: "January/1/2020", // Event date (required)
+        date: "January/1/2024", // Event date (required)
         type: "holiday", // Event type (required)
         everyYear: true, // Same event every year (optional)
       },
       {
+        id: "event7", // Event's ID (required)
+        name: "Christmas", // Event name (required)
+        date: "December/25/2023", // Event date (required)
+        type: "holiday", // Event type (required)
+        everyYear: true, // Same event every year (optional)
+      },
+      {
+        id: "event8", // Event's ID (required)
+        name: "Ubhouli", // Event name (required)
+        date: "December/26/2023", // Event date (required)
+        type: "holiday", // Event type (required)
+        everyYear: true, // Same event every year (optional)
+      },
+
+      {
         id: "event2", // Event's ID (required)
         name: "Sci-Tech Juniors", // Event name (required)
-        date: "January/4/2020", // Event date (required)
+        date: "January/4/2024", // Event date (required)
         type: "event", // Event type (required)
         everyYear: true, // Same event every year (optional)
       },
       {
         id: "event3", // Event's ID (required)
         name: "Sci-Tech Seniors", // Event name (required)
-        date: "January/5/2020", // Event date (required)
+        date: "January/5/2024", // Event date (required)
         type: "event", // Event type (required)
         everyYear: true, // Same event every year (optional)
       },
       {
         id: "event4", // Event's ID (required)
         name: "Border's Visiting Day", // Event name (required)
-        date: "January/7/2020", // Event date (required)
+        date: "January/7/2024", // Event date (required)
         type: "event", // Event type (required)
         everyYear: true, // Same event every year (optional)
       },
       {
         name: "Winter Vacatiom",
         badge: "01/7 - 01/16", // Event badge (optional)
-        date: ["January/7/2023", "January/16/2023"], // Date range
+        date: ["January/7/2024", "January/16/2024"], // Date range
         description: "Winter Break!", // Event description (optional)
         type: "holiday",
         color: "#63d867", // Event custom color (optional)
+      },
+      {
+        name: "Report Card Day",
+        date: "December/30/2023", // Date range
+        description: "Report Card Distribution Day", // Event description (optional)
+        type: "event",
+        color: "blue", // Event custom color (optional)
       },
       {
         name: "Vacation Leave",
