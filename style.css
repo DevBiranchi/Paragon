@@ -1197,6 +1197,7 @@ header h2 {
   resize: none;
   max-height: 180px;
   padding: 15px 15px 15px 0;
+  /*Hello world */
   font-size: 0.95rem;
   color: #000;
 }
@@ -1225,6 +1226,7 @@ header h2 {
     height: 100%;
     border-radius: 0;
     width: 100%;
+    /*Hello world */
   }
   .chatbot .chatbox {
     height: 90%;
