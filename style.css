@@ -18,6 +18,7 @@ body {
   height: 100%;
   width: 100%;
   perspective: 800px;
+  overflow: hidden;
 }
 
 #cursor {
@@ -45,7 +46,7 @@ body {
 }
 
 .main {
-  background-color: #0f1c01;
+  background-color: #122101;
 }
 
 .page1 {
@@ -189,7 +190,7 @@ body {
   min-height: 355vh;
   width: 100vw;
   position: relative;
-  background-color: #036912;
+  background-color: #02510e;
 }
 
 .page6 {
@@ -1187,7 +1188,7 @@ header h2 {
   width: 100%;
   background: #fff;
   padding: 3px 20px;
-  border-top: 1px solid #ddd;
+  border-top: 1px solid #028034;
 }
 .chat-input textarea {
   height: 55px;
@@ -1201,6 +1202,11 @@ header h2 {
   font-size: 0.95rem;
   color: #000;
 }
+
+.chat-input textarea::placeholder {
+  color: #028034;
+}
+
 .chat-input span {
   align-self: flex-end;
   color: #028034;
@@ -1238,4 +1244,40 @@ header h2 {
   .chatbot header span {
     display: block;
   }
+}
+
+.overlay-preloader {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  z-index: 11;
+  display: flex;
+  pointer-events: none;
+}
+
+.bar {
+  width: 10vw;
+  height: 105vh;
+  background: #037a15;
+  pointer-events: none;
+}
+
+.bar:nth-child(even) {
+  background-color: #028034;
+}
+
+.counter {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  z-index: 10000;
+  color: #fff;
+  padding: 0 9vw 4vw 0;
+  font-size: 9vw;
+  font-family: Montserrat;
+  font-weight: 400;
+  pointer-events: none;
 }

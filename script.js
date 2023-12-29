@@ -113,7 +113,7 @@ gsap.to(".page4", {
 });
 
 gsap.to(".page5", {
-  backgroundColor: "#07ad6b",
+  backgroundColor: "#078a51",
   scrollTrigger: {
     trigger: ".page5",
     scroller: ".main",
@@ -348,7 +348,7 @@ const chatInput = document.querySelector(".chat-input textarea");
 const sendChatBtn = document.querySelector(".chat-input span");
 
 let userMessage = null; // Variable to store user's message
-const API_KEY = "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"; // Paste your API key here
+const API_KEY = "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"; // Paste your API key here
 const inputInitHeight = chatInput.scrollHeight;
 
 const createChatLi = (message, className) => {
@@ -438,3 +438,43 @@ closeBtn.addEventListener("click", () =>
 chatbotToggler.addEventListener("click", () =>
   document.body.classList.toggle("show-chatbot")
 );
+
+function startLoader() {
+  let counterElement = document.querySelector(".counter");
+  let currentValue = 0;
+
+  function updateCounter() {
+    if (currentValue === 100) {
+      return;
+    }
+
+    currentValue += Math.floor(Math.random() * 10) + 1;
+
+    if (currentValue > 100) {
+      currentValue = 100;
+    }
+
+    counterElement.textContent = currentValue + " " + "%";
+
+    let delay = Math.floor(Math.random() * 100) + 25;
+    setTimeout(updateCounter, delay);
+  }
+
+  updateCounter();
+}
+
+startLoader();
+
+gsap.to(".counter", 0.25, {
+  delay: 1.7,
+  opacity: 0,
+});
+
+gsap.to(".bar", 1.5, {
+  delay: 1.7,
+  height: 0,
+  stagger: {
+    amount: 0.5,
+  },
+  ease: "power4.inOut",
+});
